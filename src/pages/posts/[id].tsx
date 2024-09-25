@@ -13,7 +13,6 @@ const PostShow: NextPage<Props> = ({ post }: Props) => {
       <h1>{post.title}</h1>
       <p>{post.publishedAt}</p>
       <p>{post.category.name}</p>
-      {/* <p>{post.eyecatch.url}</p> */}
       <Image
         src={post.eyecatch.url}
         alt={post.title}
