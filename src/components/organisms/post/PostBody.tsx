@@ -1,6 +1,6 @@
 import React from 'react'
-import { Post } from 'types'
 import styles from './PostBody.module.scss'
+import { Post } from 'types'
 // import "highlight.js/styles/github-dark-dimmed.css";
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 
 const ArticleBody: React.FC<Props> = ({ post }) => {
   return (
-    <div className='mt-10 md:m-12'>
+    <div className="mt-10 md:m-12">
       <div className="flex space-x-1.5">
         <span className="px-2.5 py-1 bg-teal-500 text-white text-lg rounded-lg">
           {post.category.name}

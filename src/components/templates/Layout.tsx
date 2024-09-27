@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../organisms/common/Footer'
-import Header from '../organisms/common/Header'
+import Footer from 'components/organisms/common/Footer'
+import Header from 'components/organisms/common/Header'
 import PageHead, { MetaPageType } from '../organisms/common/PageHead'
 
 type Props = {

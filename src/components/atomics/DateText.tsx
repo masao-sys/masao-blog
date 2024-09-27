@@ -1,11 +1,11 @@
 import React from 'react'
-import { TbClock } from 'react-icons/tb'
 import { CgSync } from 'react-icons/cg'
+import { TbClock } from 'react-icons/tb'
 import { formatDate } from '../../libs/formatDate'
 
 type Props = {
   date: string
-  type: "publishedAt" | "revisedAt"
+  type: 'publishedAt' | 'revisedAt'
 }
 
 const DateText: React.FC<Props> = ({ date, type }) => {
