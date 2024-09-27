@@ -1,8 +1,8 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
-import Layout from '@/components/templates/Layout'
 import PostBody from '@/components/organisms/post/PostBody'
 import PostHeader from '@/components/organisms/post/PostHeader'
-import { client } from '../../libs/client'
+import Layout from '@/components/templates/Layout'
+import { client } from '@/libs/client'
 import { Post, PostsListResponse } from 'types'
 
 type Props = {
