@@ -1,5 +1,7 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
-import Image from 'next/image'
+import Layout from '@/components/templates/Layout'
+import PostBody from '@/components/organisms/post/PostBody'
+import PostHeader from '@/components/organisms/post/PostHeader'
 import { client } from '../../libs/client'
 import { Post, PostsListResponse } from 'types'
 
@@ -9,18 +11,16 @@ type Props = {
 
 const PostShow: NextPage<Props> = ({ post }: Props) => {
   return (
-    <main>
-      <h1>{post.title}</h1>
-      <p>{post.publishedAt}</p>
-      <p>{post.category.name}</p>
-      <Image
-        src={post.eyecatch.url}
-        alt={post.title}
-        width={post.eyecatch.width}
-        height={post.eyecatch.height}
+    <Layout>
+      <PostHeader
+        title={post.title}
+        imageUrl={post.eyecatch.url}
+        category={post.category}
+        publishedAt={post.publishedAt}
+        revisedAt={post.revised_at}
       />
-      <div>{post.content}</div>
-    </main>
+      <PostBody post={post} />
+    </Layout>
   )
 }
 
