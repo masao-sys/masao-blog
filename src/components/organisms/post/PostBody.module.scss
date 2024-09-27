@@ -1,0 +1,62 @@
+.postBody {
+  padding: 8px;
+
+  & > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin: 40px -8px 20px;
+    background-color: #0ca678;
+    padding: 10px 20px;
+  }
+
+  & > h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #12b886;
+    margin: 40px 0 16px;
+    border-bottom: 1px solid #38D9A9;
+  }
+
+  & > h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 16px 0;
+  }
+
+  & > p {
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+  }
+
+  & > ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+
+  code {
+    font-size: 0.85em;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  }
+
+  p > code {
+    background-color: rgba(33, 90, 160, 0.07);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+  }
+
+  ul {
+    padding-inline-start: 1.5em;
+  }
+
+  & img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
