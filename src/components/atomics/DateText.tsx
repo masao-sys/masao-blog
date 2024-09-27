@@ -9,7 +9,6 @@ type Props = {
 }
 
 const DateText: React.FC<Props> = ({ date, type }) => {
-
   return (
     <div className={'flex items-center space-x-1 justify-start'}>
       {type === 'publishedAt' ? (
