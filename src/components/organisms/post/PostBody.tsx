@@ -1,11 +1,10 @@
 import React from 'react'
 import styles from './PostBody.module.scss'
 import { Post } from 'types'
-// import "highlight.js/styles/github-dark-dimmed.css";
 
 type Props = {
   post: Post
-};
+}
 
 const ArticleBody: React.FC<Props> = ({ post }) => {
   return (

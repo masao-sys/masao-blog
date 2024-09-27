@@ -17,9 +17,7 @@ const DateText: React.FC<Props> = ({ date, type }) => {
       ) : (
         <CgSync size={'14'} />
       )}
-      <span className={'text-sm'}>
-        {formatDate(date)}
-      </span>
+      <span className={'text-sm'}>{formatDate(date)}</span>
     </div>
   )
 }

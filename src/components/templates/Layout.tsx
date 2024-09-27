@@ -1,7 +1,7 @@
 import React from 'react'
+import PageHead, { MetaPageType } from 'components/organisms/common/PageHead'
 import Footer from 'components/organisms/common/Footer'
 import Header from 'components/organisms/common/Header'
-import PageHead, { MetaPageType } from '../organisms/common/PageHead'
 
 type Props = {
   title?: string

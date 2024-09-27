@@ -9,7 +9,7 @@ type Props = {
   category: Category
   publishedAt: string
   revisedAt?: string
-};
+}
 
 const PostHeader: React.FC<Props> = ({
   title,
@@ -30,7 +30,7 @@ const PostHeader: React.FC<Props> = ({
 
           <div className="mt-4 flex justify-end mr-12 space-x-4">
             <DateText date={publishedAt} type="publishedAt" />
-            {revisedAt && (<DateText date={revisedAt} type="revisedAt" />)}
+            {revisedAt && <DateText date={revisedAt} type="revisedAt" />}
           </div>
         </div>
       </div>

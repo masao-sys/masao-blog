@@ -16,13 +16,15 @@ const PostList: React.FC<Props> = ({ posts }) => {
           </h2>
 
           <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-            This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.
+            This is a section of some simple filler text, also known as
+            placeholder text. It shares some characteristics of a real written
+            text but is random or otherwise generated.
           </p>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
           {posts.map((post) => {
-            return (<PostCard post={post} />)
+            return <PostCard post={post} />
           })}
         </div>
       </div>

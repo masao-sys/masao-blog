@@ -1,6 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image'
 import { Post } from '../../types'
 
 interface PostCardProps {
@@ -35,7 +35,9 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
         </h2>
 
         <div className="mt-auto flex items-end justify-between">
-          <span className="rounded border px-2 py-1 text-sm text-gray-500">{post.category.name}</span>
+          <span className="rounded border px-2 py-1 text-sm text-gray-500">
+            {post.category.name}
+          </span>
         </div>
 
       </div>
