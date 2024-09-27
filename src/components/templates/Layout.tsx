@@ -28,7 +28,9 @@ const Layout: React.FC<Props> = ({
       />
       <div className="bg-white lg:pb-12">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <Header />{children}<Footer />
+          <Header />
+          {children}
+          <Footer />
         </div>
       </div>
     </>
