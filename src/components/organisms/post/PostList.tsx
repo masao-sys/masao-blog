@@ -23,8 +23,8 @@ const PostList: React.FC<Props> = ({ posts }) => {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
-          {posts.map((post) => {
-            return <PostCard post={post} />
+          {posts.map((post, index) => {
+            return <PostCard key={index} post={post} />
           })}
         </div>
       </div>

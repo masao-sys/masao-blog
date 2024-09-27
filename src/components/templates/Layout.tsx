@@ -1,7 +1,7 @@
 import React from 'react'
-import PageHead, { MetaPageType } from 'components/organisms/common/PageHead'
 import Footer from 'components/organisms/common/Footer'
 import Header from 'components/organisms/common/Header'
+import PageHead, { MetaPageType } from 'components/organisms/common/PageHead'
 
 type Props = {
   title?: string
@@ -28,9 +28,7 @@ const Layout: React.FC<Props> = ({
       />
       <div className="bg-white lg:pb-12">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <Header />
-            {children}
-          <Footer />
+          <Header />{children}<Footer />
         </div>
       </div>
     </>

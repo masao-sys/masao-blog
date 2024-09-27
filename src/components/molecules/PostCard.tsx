@@ -39,7 +39,6 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
             {post.category.name}
           </span>
         </div>
-
       </div>
     </div>
   )
